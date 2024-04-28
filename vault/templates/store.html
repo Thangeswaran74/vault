@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+    store Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+            <br>
+            <form action="{{ url_for('store_page') }}" method="post"  style="color:white">
+                <h1>
+                    Please enter your details
+                </h1>
+                <label for="name">Name:</label>
+                <input type="text" name="name" required class="form-control" placeholder="User Name" >
+                <label for="email_address"></label>
+                <input type="text"  name="email_address" required class="form-control"  placeholder="email_address" >
+                <label for="website_name"></label>
+                <input type="text"  name="website_name" required class="form-control"  placeholder="website_name" >
+                <label for="password"></label>
+                <input type="text" name="password" required class="form-control" placeholder="password" >
+                <label for="password1"></label>
+                <input type="text" name="password1" required class="form-control" placeholder="password1" >
+                <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+                </form>
+            <br>
+    </div>
+</body>
+{% endblock %}

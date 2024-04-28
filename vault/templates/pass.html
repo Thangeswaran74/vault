@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+  Vault Page
+{% endblock %}
+
+{% block content %}
+
+<form action="/passwords" method="post">
+    <label for="nameInput">Enter your password:</label><br>
+    <input type="text" id="nameInput" name="passw"><br>
+    <button type="submit">Submit</button>
+</form>
+<body>
+    
+
+<centre> <p>if you enter a wrong secret password it gives internal sever error so please do remember your secret password </p></centre>
+
+</body>{% endblock %}
